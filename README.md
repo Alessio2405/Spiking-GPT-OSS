@@ -125,7 +125,7 @@ inference behaviour.
   SpikingBrain.  It simply applies a spike encoding on top of a
   frozen base model.  Achieving the performance reported by
   SpikingBrain would require re‑training with hybrid attention,
-  spike‑aware optimisation and expert replication【338975382826362†L182-L190】.
+  spike‑aware optimisation and expert replication.
 * **Memory requirements:** Loading GPT‑OSS‑20B or larger models
   requires significant GPU memory.  For local experimentation use
   smaller models or vLLM with streaming quantisation.
