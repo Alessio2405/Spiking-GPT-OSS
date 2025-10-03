@@ -8,7 +8,7 @@ outputs.  The implementation draws inspiration from the
 **SpikingBrain** project, which demonstrates how to convert dense
 Transformer models into sparse, brain‑inspired versions using a
 combination of efficient attention, Mixture‑of‑Experts (MoE) modules
-and adaptive spiking mechanisms【338975382826362†L196-L204】.  While the full
+and adaptive spiking mechanisms.  While the full
 SpikingBrain pipeline involves continual pre‑training, MoE up‑cycling
 and hardware‑specific optimisations, this repository focuses on the
 final stage: converting a pre‑trained model's activations into sparse
@@ -19,7 +19,7 @@ The wrapper in `spiking_wrapper.py` can be used with any
 `gpt2` because it is small enough to load on a CPU.  To use the
 official GPT‑OSS weights you should specify the model identifier
 `openai/gpt‑oss‑20b` or `openai/gpt‑oss‑120b`.  These weights can be
-downloaded from Hugging Face under the permissive Apache‑2.0 licence【981994616451650†L51-L66】.
+downloaded from Hugging Face under the permissive Apache‑2.0 licence.
 
 Three spike encoding schemes are supported:
 
@@ -113,7 +113,7 @@ applies the chosen spike encoding.  For generation the wrapper can
 optionally return spike‑encoded scores at each decoding step.
 
 The encoding schemes are simplified approximations of the adaptive
-threshold spiking described in the SpikingBrain report【338975382826362†L196-L204】.
+threshold spiking described in the SpikingBrain report.
 By experimenting with different thresholds and bit depths you can
 explore the trade‑offs between sparsity, information content and
 inference behaviour.
@@ -132,7 +132,7 @@ inference behaviour.
 * **Bitwise encoding semantics:** The bitwise encoding implemented
   here is one of several possible encodings.  The Int2Spike
   repository describes binary, ternary and bitwise encodings in
-  detail【318971114116129†L12-L21】; more sophisticated schemes could be explored.
+  detail; more sophisticated schemes could be explored.
 
 Despite these limitations, this repository provides a functional
 starting point for researchers interested in exploring brain‑inspired
