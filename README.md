@@ -31,7 +31,7 @@ Three spike encoding schemes are supported:
   timesteps.
 
 These encodings approximate the *pseudo‑spiking* mechanism used in
-SpikingBrain‑7B and are useful for exploring
+SpikingBrain‑7B (https://github.com/BICLab/SpikingBrain-7B) and are useful for exploring
 brain‑inspired computation on existing models.
 
 ## Installation
